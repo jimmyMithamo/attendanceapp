@@ -129,3 +129,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = ['https://www.tutumekenya.co.ke', 'https://tutumekenya.co.ke']
+CSRF_COOKIE_SECURE = True  # Ensures cookie is sent over HTTPS
+SESSION_COOKIE_SECURE = True  # Ensures cookie is sent over HTTPS
