@@ -116,15 +116,3 @@ CSRF_TRUSTED_ORIGINS = [
     'https://tutumekenya.co.ke',  # ⬅ UPDATE THIS with your actual domain
 ]
 
-CSRF_COOKIE_SECURE = True  # Ensures CSRF works over HTTPS
-CSRF_COOKIE_HTTPONLY = True  # Prevents JavaScript from accessing CSRF cookie
-CSRF_COOKIE_SAMESITE = 'Lax'  # Protects against cross-site request forgery
-
-SESSION_COOKIE_SECURE = True  # Ensures session cookies are only sent over HTTPS
-
-SECURE_SSL_REDIRECT = True  # Redirects all HTTP requests to HTTPS
-
-# HTTP Strict Transport Security (HSTS) - Protects against man-in-the-middle attacks
-SECURE_HSTS_SECONDS = 31536000  # 1 year
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_HSTS_PRELOAD = True
