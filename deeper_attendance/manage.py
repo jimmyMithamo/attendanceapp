@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
-
+#django task file
 
 def main():
     """Run administrative tasks."""
